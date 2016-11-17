@@ -28,7 +28,7 @@ public class MenuActivity extends AppCompatActivity {
             @Override
             public void onClick(View view) {
                 Uri phone_uri = Uri.parse("tel:");
-                
+
                 Intent intent = new Intent(Intent.ACTION_DIAL, phone_uri);
                 startActivity(intent);
             }
@@ -38,7 +38,9 @@ public class MenuActivity extends AppCompatActivity {
         btn_map.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-
+                Intent intent = new Intent(android.content.Intent.ACTION_VIEW,
+                        Uri.parse("http://maps.google.com/maps?saddr=20.344,34.34&daddr=20.5666,45.345"));
+                startActivity(intent);
             }
         });
 
