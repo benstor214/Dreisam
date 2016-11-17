@@ -48,10 +48,9 @@ public class MenuActivity extends AppCompatActivity {
             @Override
             public void onClick(View view) {
                 /*Intent intent = new Intent(view.getContext(), LoginActivity.class);
-                intent.addFlags(Intent.FLAG_ACTIVITY_NEW_TASK | Intent.FLAG_ACTIVITY_CLEAR_TASK);
-                Toast.makeText(view.getContext(), "You are now logged out!", Toast.LENGTH_LONG).show();
+                intent.addFlags(Intent.FLAG_ACTIVITY_NEW_TASK | Intent.FLAG_ACTIVITY_CLEAR_TASK);                
                 startActivity(intent);*/
-
+                Toast.makeText(view.getContext(), "You are now logged out!", Toast.LENGTH_LONG).show();
                 finish();
 
             }
