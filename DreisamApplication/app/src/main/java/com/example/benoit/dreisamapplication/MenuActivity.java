@@ -23,7 +23,9 @@ public class MenuActivity extends AppCompatActivity {
         btn_phone.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                Intent intent = new Intent();
+                //Intent intent = new Intent();
+
+
 
             }
         });
