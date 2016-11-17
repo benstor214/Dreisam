@@ -8,11 +8,11 @@
     android:paddingLeft="@dimen/activity_horizontal_margin"
     android:paddingRight="@dimen/activity_horizontal_margin"
     android:paddingTop="@dimen/activity_vertical_margin"
-    tools:context="com.example.benoit.dreisamapplication.LoginActivity"
-    android:background="@color/colorPrimaryDark">
+    android:background="@color/colorPrimaryDark"
+    tools:context="com.example.benoit.dreisamapplication.LoginActivity">
 
     <TextView
-        android:id="@+id/textView_welcome_message"
+        android:id="@+id/txt_welcome_message"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_margin="10dp"
@@ -20,20 +20,31 @@
         android:text="Du solls dëch aloggen, du Dreckslouder! Wouscht bass dë!" />
 
     <EditText
-        android:id="@+id/editText_login"
+        android:id="@+id/etxt_login"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_margin="10dp"
+        android:layout_below="@+id/txt_welcome_message"
         android:background="@color/colorWhite"
-        android:layout_below="@+id/textView_welcome_message"
-        android:text="login"/>
+        android:text="@string/txt_login"/>
 
     <EditText
-        android:id="@+id/editText_pswd"
+        android:id="@+id/etxt_pswd"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_margin="10dp"
+        android:layout_below="@+id/etxt_login"
         android:background="@color/colorWhite"
-        android:layout_below="@+id/editText_login"
-        android:text="password"/>
+        android:text="@string/txt_pswd"/>
+
+    <Button
+        android:id="@+id/btn_signin"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:layout_below="@+id/etxt_pswd"
+        android:background="@color/colorAccent"
+        android:text="@string/txt_signin"
+        android:layout_centerHorizontal="true"
+        />
 </RelativeLayout>
